@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Patron Dashboard</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ensure correct path -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>CUHK(SZ) Library Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="patron_dashboard.html">Dashboard</a></li>
+                <li><a href="#" id="logout-button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <h2>Search Resources</h2>
+        <div id="searchMessage" class="message"></div> <!-- To display search-related messages -->
+        <form id="searchFormElement">
+            <input type="text" id="searchQuery" placeholder="Search by title, author, ISBN..." required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div> <!-- To display search results -->
+    </section>
+
+    <!-- Borrowed Books Section -->
+    <section class="borrowed-books-section">
+        <h2>Your Borrowed Books</h2>
+        <div id="borrowedBooksMessage"></div> <!-- To display borrowed books-related messages -->
+        <table id="borrowedBooksTable">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Type</th>
+                    <th>Borrow Date</th>
+                    <th>Due Date</th>
+                    <th>Renewals</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Borrowed books will be populated here dynamically -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Renew Confirmation Modal -->
+    <div id="renewConfirmationModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeRenewModal" class="close-button">&times;</span>
+            <h3>Confirm Renewal</h3>
+            <p>Are you sure you want to renew this borrowing?</p>
+            <button id="confirmRenewButton">Yes, Renew</button>
+            <button id="cancelRenewButton">Cancel</button>
+        </div>
+    </div>
+
+    <!-- Loading Spinner (Optional: Remove if not using) -->
+    <div id="loading-spinner" class="hidden">
+        <!-- Simple loading text -->
+        <p>Loading...</p>
+    </div>
+
+    <script src="scripts.js"></script> <!-- Ensure correct path -->
+</body>
+</html>

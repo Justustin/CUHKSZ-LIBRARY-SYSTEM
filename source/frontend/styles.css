@@ -1,0 +1,732 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styling */
+header {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #e0e0e0;
+}
+
+/* ============================
+   3. Search Section Styling
+   ============================ */
+
+   .search-section {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    width: 1000px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .search-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    font-size: 24px;
+  }
+  
+  #searchMessage {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 14px;
+    display: none; /* Hidden by default */
+  }
+  
+  #searchFormElement {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #searchFormElement input[type="text"] {
+    width: 70%;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  #searchFormElement input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  #searchFormElement button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #searchFormElement button:hover {
+    background-color: #45a049;
+  }
+  
+  #searchResults {
+    margin-top: 20px;
+  }
+
+/* ============================
+   4. Borrowed Books Section Styling
+   ============================ */
+
+.borrowed-books-section {
+  background-color: #fff;
+  padding: 30px 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 1000px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.borrowed-books-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  font-size: 24px;
+}
+
+#borrowedBooksMessage {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+  display: none; /* Hidden by default */
+}
+
+#borrowedBooksTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#borrowedBooksTable th, #borrowedBooksTable td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+#borrowedBooksTable th {
+  background-color: #343a40;
+  color: white;
+}
+
+#borrowedBooksTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#borrowedBooksTable tr:hover {
+  background-color: #ddd;
+}
+
+.borrowed-books-section .action-button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.borrowed-books-section .renew-button {
+  background-color: #2196F3;
+}
+
+.borrowed-books-section .renew-button:hover {
+  background-color: #0b7dda;
+}
+
+.borrowed-books-section .renew-button:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
+
+/* Hero Section Styling */
+.hero {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.btn-primary {
+  padding: 12px 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+/* Features Section Styling */
+.features {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #4CAF50;
+  font-size: 28px;
+}
+
+.feature-item {
+  max-width: 300px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+}
+
+.feature-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 20px;
+}
+
+.feature-item p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Form Section Styling */
+.form-section, .add-resource-section, .view-resources-section {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-section h2, .add-resource-section h2, .view-resources-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CAF50;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #45a049;
+}
+
+.redirect-message {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.redirect-message a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.redirect-message a:hover {
+  color: #388e3c;
+}
+
+/* Message Div Styling */
+#message, #addResourceMessage, #viewResourcesMessage, #editResourceMessage {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+
+/* Books Grid Styling (For Patron Dashboard) */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.book-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.book-card img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.book-card h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.book-card button {
+  padding: 8px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color: #45a049;
+}
+
+.book-card button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table Styling (For Librarian Dashboard) */
+#resourcesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#resourcesTable th, #resourcesTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+#resourcesTable th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#resourcesTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#resourcesTable tr:hover {
+  background-color: #ddd;
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.action-button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #2196F3;
+}
+
+.edit-button:hover {
+  background-color: #0b7dda;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
+
+/* Modal Styling */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+  justify-content: center;
+  align-items: center;
+}
+
+/* ============================
+   Hidden Class for Visibility Toggle
+   ============================ */
+.hidden {
+  display: none !important;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px 30px;
+  border: 1px solid #888;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+}
+
+.btn-danger {
+  background-color: #f44336;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn-danger:hover {
+  background-color: #da190b;
+}
+
+.btn-secondary {
+  background-color: #9e9e9e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #7e7e7e;
+}
+
+/* ============================
+   Loading Spinner Styling
+   ============================ */
+#loading-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+}
+
+/* ============================
+   User Management Section Styling
+   ============================ */
+
+/* Users Message Div Styling */
+#allUsersMessage {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Users Table Styling */
+#usersTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#usersTable th, #usersTable td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+#usersTable th {
+  background-color: #343a40;
+  color: white;
+}
+
+#usersTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#usersTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Action Buttons in Users Table */
+.users-table .action-button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.users-table .edit-button {
+  background-color: #2196F3;
+}
+
+.users-table .edit-button:hover {
+  background-color: #0b7dda;
+}
+
+.users-table .delete-button {
+  background-color: #f44336;
+}
+
+.users-table .delete-button:hover {
+  background-color: #da190b;
+}
+
+/* ============================
+   Additional Global Styles (No Changes)
+   ============================ */
+
+/* ... Rest of your existing styles remain unchanged ... */
+
+/* Ensure no duplicate styles interfere with User Management */
+
+/* Remove or comment out any duplicate .action-button definitions if necessary */
+/* For example, if .action-button is defined multiple times, ensure only one definition exists or namespace them appropriately */
+
+/* ============================
+   Responsive Design
+   ============================ */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  nav ul li {
+      margin: 10px 0;
+  }
+
+  .form-section, .add-resource-section, .view-resources-section {
+      margin: 20px;
+  }
+
+  .books-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  /* User Management Table Responsiveness */
+  #usersTable th, #usersTable td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .action-button {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .books-grid {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  /* Adjust table padding for medium screens */
+  #usersTable th, #usersTable td {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+}

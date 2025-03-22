@@ -1,0 +1,6 @@
+1. first connect to mySQL using "mysql -u root -p" enter password
+2. connect to the database using "USE cuhksz_library;"
+
+3. cd to the beackend folder then connect to the server by calling nodemon: "nodemon server.js"
+
+4. search for index.html then right click and open with live server.
