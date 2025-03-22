@@ -34,7 +34,7 @@ A modern web-based library management system with elegant workflows for libraria
 ### Step-by-Step Setup
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/library-management-system.git
+git clone https://github.com/justustin/CUHKSZ-LIBRARY-SYSTEM.git
 cd library-management-system
 
 # Install dependencies
@@ -131,5 +131,3 @@ Distributed under MIT License. See `LICENSE` for details.
 - [Express.js](https://expressjs.com/) Team
 - [JWT](https://jwt.io/) Authentication Standard
 - Community-driven development inspiration
-
-**Happy Coding!** 🚀
